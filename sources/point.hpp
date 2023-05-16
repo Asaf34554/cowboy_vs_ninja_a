@@ -3,8 +3,8 @@ namespace ariel{
 
 
     class Point{
-        int __x;
-        int __y;
+        double __x;
+        double __y;
 
 
         public:

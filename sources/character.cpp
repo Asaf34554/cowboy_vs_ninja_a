@@ -5,25 +5,22 @@
 using namespace std;
 using namespace ariel;
 
-//constructors
 
-// Character::Character(int hitpoint,Point place,std::string name){
-    
+
+// string Character::print(){
+//     if(this->is_Alive()){
+//         cout <<"("<< _name << ")" <<endl;
+//     }
+//     else{
+//         cout << _name << endl;
+//         cout<< _hit_point << endl;
+//         _location.print();
+//     }
 // }
 
-void Character::print(){
-    if(this->is_Alive()){
-        cout <<"("<< _name << ")" <<endl;
-    }
-    else{
-        cout << _name << endl;
-        cout<< _hit_point << endl;
-        _location.print();
-    }
-}
 
-double Character:: distance(Point dst){
-    return this->_location.distance(dst);
+double Character:: distance(Character* dst){
+    return this->_location.distance(dst->getLocation());
 }
 
 void Character:: hit(int hit){

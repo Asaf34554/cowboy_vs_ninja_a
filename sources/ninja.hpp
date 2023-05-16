@@ -30,6 +30,8 @@ namespace ariel{
                 return ans;
             }
         }
-        void move(Character * enemy);
+        void move(Character * enemy){
+            this->getLocation().moveTowards(this->getLocation(),enemy->getLocation(),this->_speed);
+        }
     };
 }

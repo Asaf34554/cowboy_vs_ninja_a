@@ -13,9 +13,7 @@ namespace ariel{
 
         public:
             Team(Character* warrior);
-            ~Team(){
-                delete[] warriors;
-            }
+            ~Team();
 
             
             void add(Character* warrior);
